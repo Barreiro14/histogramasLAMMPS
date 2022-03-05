@@ -1,4 +1,4 @@
-file = open("position.xyz", "r")
+file = open("posicion6.xyz", "r")
 
 def timeStepFinder():
     i = 0
