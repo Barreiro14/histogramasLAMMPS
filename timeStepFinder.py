@@ -1,11 +1,15 @@
-file = open("posicion6.xyz", "r")
+
 
 def timeStepFinder():
+    file = open("posicion6.xyz", "r")
     i = 0
-    f = open("pos{i}".format(i), "a")
+    
+    
     for line in file:
-        if line == 1000: #number of atoms
+        f = open("pos{}".format(i), "a")
+        if line[0] == '11264': #number of atoms
             i = i + 1
+            
             break
         else:
             f.write(line)

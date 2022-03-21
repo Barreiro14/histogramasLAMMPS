@@ -3,9 +3,9 @@
 def filter(n):
 	i = 0
 	while i < n:
-		f = open("fil_pos{i}".format(i),"a")
-		fi = open("pos{i}".format(i),"r")
-		for line in fi:
-			if (line[0] == 2):
-				f.write(line)
+		fi = open("fil_pos{}".format(i),"a")
+		f = open("pos{}".format(i),"r")
+		for line in f:
+			if (line[0] == '2'):
+				fi.write(line)
 		i += 1		
