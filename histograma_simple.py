@@ -20,5 +20,5 @@ def his_simple(n):
         #my_dict_z = {k:z.count(k) for k in z}
         
         plt.bar(my_dict_x.key(),my_dict_x.values())
-        plt.show()
+    plt.show()
         
