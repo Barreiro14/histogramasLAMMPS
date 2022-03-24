@@ -1,9 +1,6 @@
 from timeStepFinder import timeStepFinder
 from filter import filter 
 from histograma_simple import his_simple
-#import posicion6 
-
-#file = open("posicion6.xyz", "r")
 
 def main():
 	print("hasta ahora todo jevi")

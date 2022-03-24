@@ -14,6 +14,6 @@ def his_simple(n):
             x.append(float(line[2:6]))
         i = i + 1
         plt.hist(x)
-        plt.savefig("{}th time step".format(i*100))
+        plt.savefig("{}th time step.png".format(i*100))
     plt.show()
         
