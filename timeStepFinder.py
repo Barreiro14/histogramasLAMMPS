@@ -7,11 +7,11 @@ def timeStepFinder():
         f = open("pos{}".format(i), "a")
         if line[0:5] == '11264': #number of atoms
             i = i + 1
-            print("encontro la linea")
+            #print("encontro la linea")
             #break
         else:
             #print(line[0:4])
-            print(line)
+            #print(line)
             f.write(line)
             #f.write("")
 

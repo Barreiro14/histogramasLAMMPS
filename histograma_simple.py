@@ -6,19 +6,14 @@ def his_simple(n):
 
     while i < n:
         x = []
-        y = []
-        z = []
+        #y = []
+        #z = []
         
-        ff = open("fil_pos{}".format(0),"r")
+        ff = open("fil_pos{}".format(i), "r")
         for line in ff:
             x.append(float(line[2:6]))
-            #y.append(float(line[10:14]))
-            #z.append(float(line[18:22]))
-        
-        my_dict_x = {k:x.count(k) for k in x}
-        #my_dict_y = {k:y.count(k) for k in y}
-        #my_dict_z = {k:z.count(k) for k in z}
-        
-        plt.bar(my_dict_x.key(),my_dict_x.values())
+        i = i + 1
+        plt.hist(x)
+        plt.savefig("{}th time step".format(i*100))
     plt.show()
         
