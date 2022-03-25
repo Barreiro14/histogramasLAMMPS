@@ -5,15 +5,15 @@ def his_simple(n):
     i = 0
 
     while i < n:
-        x = []
-        #y = []
-        #z = []
-        
+        h = []
         ff = open("fil_pos{}".format(i), "r")
         for line in ff:
-            x.append(float(line[2:6]))
+            h.append(float(line[2:6]))
         i = i + 1
-        plt.hist(x)
-        plt.savefig("{}th time step.png".format(i*100))
-    plt.show()
+        plt.hist(h, 50)
+        #plt.show()
+        #plt.savefig("{}th time step.png".format(i*100))
+        print(i)
+        print(h)
+    #plt.show()
         
