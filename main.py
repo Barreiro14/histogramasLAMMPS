@@ -8,7 +8,7 @@ def main():
 	
 	timeStepFinder() #puse 6 porque son 6 archivos que se pueden sacar con el actual loglammps (600/100)
 	filter(8)
-	his_simple(8)
+	his_simple(7)
 
 
 
